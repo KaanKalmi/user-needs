@@ -2,6 +2,8 @@
 3 opdrachten over 3 weken. Elke week maak je nieuwe designs/challenges. 
 Programming spikes en creative coding
 
+**website**: https://conceptroulette.fdnd.nl/
+
 ## Coding spike
 Is a type of computer programming in which the goal is to create something expressive instead of something functional.
 - We gaan dat 3 keer doen, in de vorm van een 'spike'. 
@@ -20,4 +22,20 @@ Is a type of computer programming in which the goal is to create something expre
 
 FDND Concept Roulette. Je rouleert 1 keer en doet hetgene van wat je gevraagd wordt. 
 
+## Code examples 
+
+```css	
+@supports (animation-timeline): scroll()
+{
+ animation: rotateX linear;
+ }
+
+@property --skull-lightness
+    {
+    syntax: '<percentage>';
+    initial-value: 100%
+ }
+ ```
+
+ Gebruik nesting in @support, level de animaties. 
 
