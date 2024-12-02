@@ -1,4 +1,4 @@
-# Sprint 16
+# Sprint 17
 3 opdrachten over 3 weken. Elke week maak je nieuwe designs/challenges. 
 Programming spikes en creative coding
 
