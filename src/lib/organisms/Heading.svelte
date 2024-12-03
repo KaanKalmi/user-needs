@@ -14,6 +14,7 @@
 
 <style>
   h2 {
+    font-size: 3rem;
     font-weight: bold;
     letter-spacing: -0.04em;
     margin: 0;
@@ -23,5 +24,6 @@
   h2 > strong {
     display: block;
     white-space: nowrap;
+    font-size: 1.5rem;
   }
 </style>

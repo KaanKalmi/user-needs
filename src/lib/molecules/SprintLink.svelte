@@ -44,14 +44,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     border: 2px solid var(--turquoise);
     border-radius: var(--rounded);
     box-shadow: -4px 4px var(--lavender);
-    margin-top: 0.6em;
+    margin-top: 0.8em; 
     background: var(--white);
     width: 100%;
-    height: 5rem;
+    height: 6rem; 
     overflow: hidden;
   }
 
@@ -60,7 +60,7 @@
     align-items: center;
     text-decoration: none;
     color: black;
-    font-size: 1rem;
+    font-size: 1.2rem;
     position: relative;
     height: 100%;
     width: 100%;
@@ -86,8 +86,8 @@
     justify-content: center;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 1.2em;
-    width: 60px;
+    font-size: 1.4em; 
+    width: 6rem; 
     height: 100%;
     margin-left: -0.25em;
     border-radius: var(--rounded);
@@ -100,7 +100,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: calc(100% - 70px);
+    width: calc(100% - 80px); 
     height: 100%;
     padding-left: 0.5em;
   }
@@ -130,13 +130,13 @@
     display: none;
     padding: 0.25em 0.1em;
     border-radius: var(--rounded);
-    height: 2em;
+    height: 2.5em; 
     border: 2px solid var(--lavender);
     box-shadow: -4px 4px var(--turquoise);
   }
 
   li.extra span {
-    font-size: 0.5em;
+    font-size: 0.6em; 
     font-weight: 600;
     line-height: 1.2;
     margin-left: 1.75em;
@@ -154,7 +154,7 @@
 
   time {
     border: 0 solid;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 600;
     background-color: transparent;
     color: inherit;

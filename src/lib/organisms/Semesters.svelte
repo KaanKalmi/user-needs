@@ -85,25 +85,28 @@
   }
 
   section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     padding: 0;
     background: var(--grey);
     color: var(--blueberry);
   }
-  h2 { margin: 0; padding: 3rem 1.25rem 1.5rem; }
+  h2 { margin: 0; padding: 3rem 1.25rem 1.5rem; font-size: 2.5rem; }
   .semester-grid {
     display: flex;
     flex-direction: column;
-    scroll-snap-type: x mandatory;
-    padding: 1rem 2rem 2rem 0rem;
+    width: 50rem;
   }
   label {
     color: var(--blueberry);
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-left: 0.8rem;
   }
-  @media (min-width: 600px) {
+  /* @media (min-width: 600px) {
     .semester-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -118,5 +121,5 @@
       padding: 2rem 3rem 2rem 1rem;
     }
     h2 { padding-left: 2rem; }
-  }
+  } */
 </style>

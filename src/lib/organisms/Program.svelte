@@ -16,9 +16,17 @@
     background-color: var(--grey);
     color: var(--blueberry);
     border-radius: var(--rounded) 0 0 0;
-    padding: 3rem 1.25rem 2rem 0rem;
+    height: 35rem;
+    padding: 3rem 3rem 2rem 0rem;
     div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      height: 30rem;
       padding: 1.25em;
+      width: 100%;
       background-color: var(--white);
       border: 2px solid var(--turquoise);
       border-radius: var(--rounded);
@@ -28,7 +36,7 @@
   :global(section h2::selection, section p::selection) { background-color: var(--lavender); color: var(--lavender); }
   :global(section h2) { font-size: 2.25rem; padding: 0.25em; padding-left: 1rem; }
   :global(section p) {
-    padding: 0 0.75em; font-size: 1rem; margin: 0;
+    padding: 0 0.75em; font-size: 1.5rem; margin: 0;
     max-width: 65ch; letter-spacing: -0.04em;
   }
   @media (min-width: 750px) { div { width: max-content; } }
