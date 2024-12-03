@@ -45,6 +45,7 @@
       max-width: var(--max-width);
       padding: 0 2rem 0 3rem;
       border-radius: var(--rounded);
+      
     }
   }
 </style>

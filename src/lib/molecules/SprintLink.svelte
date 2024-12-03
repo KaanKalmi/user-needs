@@ -40,6 +40,16 @@
     background-position: left bottom;
   }
 
+  @keyframes animate-in {
+	0% { opacity: 0; transform: translateY(100%); }
+	100% { opacity: 1; transform: translateY(0); }
+}
+
+  @keyframes animate-out {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-100%); }
+  }
+
   li {
     display: flex;
     align-items: center;
@@ -53,6 +63,11 @@
     width: 100%;
     height: 6rem; 
     overflow: hidden;
+
+    animation: animate-in linear forwards,
+				animate-out linear forwards;
+    animation-timeline: view();
+    animation-range: entry, exit;
   }
 
   li a {

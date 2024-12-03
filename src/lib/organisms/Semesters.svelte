@@ -93,6 +93,7 @@
     padding: 0;
     background: var(--grey);
     color: var(--blueberry);
+
   }
   h2 { margin: 0; padding: 3rem 1.25rem 1.5rem; font-size: 2.5rem; }
   .semester-grid {
