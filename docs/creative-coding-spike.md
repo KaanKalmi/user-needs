@@ -49,11 +49,13 @@ Elke week ontwerp en maak je een creatieve oplossing, welke je op vrijdag gaat t
 
 #### Spike 2: View Transitions
 
-- [View Transitions demos](https://view-transitions.chrome.dev/)
-- [Smooth transitions with the View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions/)
+[View Transitions demos](https://view-transitions.chrome.dev/)
 - [View Transitions Playlists demo](https://live-transitions.pages.dev/)
+- [Inspiratie & demo's @ Codrops](https://tympanus.net/codrops/tag/page-transition/)
+- [Smooth transitions with the View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions/)
 - [Liven up your websites with Scroll-Driven Animations & View Transitions @ YouTube](https://www.youtube.com/watch?v=nFbuXdEU-oA)
 - [Unlocking view transitions in SvelteKit](https://svelte.dev/blog/view-transitions)
+- [View transitions: Handling aspect ratio changes](https://jakearchibald.com/2024/view-transitions-handling-aspect-ratio-changes/)
 - [View transitions in the real world (slides)](https://view-transitions-irl.netlify.app/)
 
 #### Creative coding Inspiratie:
