@@ -1,6 +1,8 @@
 <script>
   import Nav from "$lib/organisms/Nav.svelte";
   import Footer from "$lib/organisms/Footer.svelte";
+  import { onNavigate } from "$app/navigation";
+
   /**
    * @typedef {Object} Props
    * @property {import('svelte').Snippet} [children]
@@ -8,6 +10,18 @@
 
   /** @type {Props} */
   let { children } = $props();
+
+  onNavigate((navigation) => {
+    b.addEventListener('click', function() {
+      if (document.startViewTransition) {
+          document.startViewTransition(toggleActiveState)
+          } else {
+            toggleActiveState()
+          }
+    })
+
+    function toggleActiveState() { d.classList.toggle('active') }
+  });
 </script>
 
 <svelte:head>
@@ -47,4 +61,8 @@
       border-radius: var(--rounded);
     }
   }
+
+  ::view-transition(:root) {
+   animation-duration: 3s;
+}
 </style>
