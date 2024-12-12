@@ -43,7 +43,14 @@
     max-width: var(--max-width);
     padding: 0 1rem 0 1rem;
     border-radius: var(--rounded);
+    view-transition-name: brutalist;
   }
+
+  :global(main::view-transition) {
+    view-transition-name: brutalist;
+    animation: brutalist 1.5s forwards;
+  }
+
   :global(footer) {
     margin: auto;
     margin-top: 1rem;
@@ -52,6 +59,12 @@
   :global(footer nav) { padding: 1rem; }
   :global(footer nav h2) { margin: calc(-1rem - 1px) calc(-1rem - 1px) 1rem 2rem; }
   :global(footer nav p), :global(footer nav ul) { margin-left: 0.5rem; }
+
+  @keyframes brutalist {
+    0% { background: cyan; }
+    100% { background: darkkhaki; }
+  }
+
   @media (min-width: 750px) {
     :global(main) {
       background-color: var(--grey);
@@ -60,8 +73,4 @@
       border-radius: var(--rounded);
     }
   }
-
-  ::view-transition(:root) {
-   animation-duration: 3s;
-}
 </style>

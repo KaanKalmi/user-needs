@@ -36,11 +36,11 @@ main {
 }
 
 ::view-transition-group(brutalist) {
- animation: brutalist 3s forwards;
+animation: brutalist 3s forwards;
 }
 
 @keyframes brutalist {
-  0% { background-color: cyan; }
-  50% { background-color: hotpink; }
-  100% { background-color: darkkhaki; }
+  0% { background-color: cyan !important; }
+  50% { background-color: hotpink !important; }
+  100% { background-color: darkkhaki !important; }
 }
