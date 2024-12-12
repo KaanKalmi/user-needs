@@ -30,4 +30,17 @@ footer { margin-top: 2rem; }
 footer nav h2 { margin: calc(-1rem - 1px) calc(-1rem - 1px) 1rem 2rem }
 ::marker { color: currentColor; }
 section a { padding: 0 .25rem }
-@view-transition { navigation: auto; }
+
+main {
+  view-transition-name: brutalist;
+}
+
+::view-transition-group(brutalist) {
+ animation: brutalist 3s forwards;
+}
+
+@keyframes brutalist {
+  0% { background-color: cyan; }
+  50% { background-color: hotpink; }
+  100% { background-color: darkkhaki; }
+}
