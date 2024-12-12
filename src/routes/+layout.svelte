@@ -1,7 +1,7 @@
 <script>
   import Nav from "$lib/organisms/Nav.svelte";
   import Footer from "$lib/organisms/Footer.svelte";
-  import { onNavigate } from "$app/navigation";
+  import { onNavigate } from '$app/navigation';
 
   /**
    * @typedef {Object} Props
@@ -12,15 +12,14 @@
   let { children } = $props();
 
   onNavigate((navigation) => {
-    b.addEventListener('click', function() {
-      if (document.startViewTransition) {
-          document.startViewTransition(toggleActiveState)
-          } else {
-            toggleActiveState()
-          }
-    })
+      if (!document.startViewTransition) return;
 
-    function toggleActiveState() { d.classList.toggle('active') }
+      return new Promise((resolve) => {
+          document.startViewTransition(async () => {
+              resolve();
+              await navigation.complete;
+          });
+      });
   });
 </script>
 

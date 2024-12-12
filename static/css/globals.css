@@ -30,3 +30,4 @@ footer { margin-top: 2rem; }
 footer nav h2 { margin: calc(-1rem - 1px) calc(-1rem - 1px) 1rem 2rem }
 ::marker { color: currentColor; }
 section a { padding: 0 .25rem }
+@view-transition { navigation: auto; }
