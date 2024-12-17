@@ -13,12 +13,7 @@
   {#if jsEnabled}
     <form class="agenda-container">
       <label for="show-hide-dates">
-        <input
-          type="checkbox"
-          id="show-hide-dates"
-          class="pacman"
-          onchange={toggleDates}
-        />
+        <input type="checkbox" id="show-hide-dates" class="pacman" onchange={toggleDates}/>
         Show/hide full agenda
       </label>
     </form>
@@ -56,7 +51,7 @@
     position: absolute;
     width: 0.8em;
     height: 0.4em;
-    background: yellow;
+    background: var(--call-to-action);
     border-radius: 50% / 100% 100% 0 0;
     top: 50%;
     left: 0.5em;

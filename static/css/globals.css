@@ -1,3 +1,5 @@
+@font-face { font-family: 'gothic'; src: url(../fonts/gothic.woff2) format('woff2'); }
+
 :root {
   --white: #f2f3f8;
   --grey: #dcdfe5;
@@ -11,16 +13,7 @@
   --breakpoint-medium: 30em;
 }
 
-@font-face {
-  font-family: 'gothic';
-  src: url(../fonts/gothic.woff2) format('woff2');
-}
-
-* {
-  font-family: "gothic", cursive;
-  list-style: none;
-}
-
+* { font-family: "gothic", cursive; list-style: none; }
 *::-webkit-scrollbar { display: none; }
 body { overflow-x: hidden; }
 h2 { margin-left: 1.5rem; }
