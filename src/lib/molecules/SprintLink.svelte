@@ -117,7 +117,7 @@
     text-decoration: line-through;
   }
 
-  span.past { color: var(--attention); }
+  span.past { color: var(--lavender); }
   li a, li > span {
     display: flex;
     white-space: nowrap;

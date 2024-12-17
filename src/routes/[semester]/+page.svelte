@@ -2,9 +2,20 @@
   import Heading from "$lib/organisms/Heading.svelte";
   import Content from "$lib/organisms/ContentSemester.svelte";
   import SprintLink from "$lib/molecules/SprintLink.svelte";
+  import { onNavigate } from "$app/navigation";
+
+  onNavigate((navigation) => {
+      if (!document.startViewTransition) return;
+
+      return new Promise((resolve) => {
+          document.startViewTransition(async () => {
+              resolve();
+              await navigation.complete;
+          });
+      });
+  });
 
   let { data } = $props();
-
   const semester = data;
 </script>
 

@@ -110,7 +110,7 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          border: 1px solid var(--attention);
+          border: 1px solid var(--blueberry);
           background-color: var(--grey);
           border-radius: var(--rounded);
           color: var(--attent);

@@ -2,9 +2,20 @@
   import Content from "$lib/organisms/ContentSprint.svelte";
   import Tasks from "$lib/organisms/Tasks.svelte";
   import Schedule from "$lib/organisms/Schedule.svelte";
+  import { onNavigate } from "$app/navigation";
+
+  onNavigate((navigation) => {
+      if (!document.startViewTransition) return;
+
+      return new Promise((resolve) => {
+          document.startViewTransition(async () => {
+              resolve();
+              await navigation.complete;
+          });
+      });
+  });
 
   let { data } = $props();
-
   const { title, sprintNumber, startdate, content, weekPlans, topics, tasks } = data;
 </script>
 
