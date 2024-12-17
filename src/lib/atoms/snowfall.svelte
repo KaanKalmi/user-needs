@@ -2,6 +2,7 @@
 
 <style>
     .snow, .snow:before, .snow:after {
+        pointer-events: none;
         position: absolute;
         top: -600px;
         left: 0;
@@ -30,7 +31,7 @@
         background-size: 600px 600px;
         animation: snow 3s linear infinite;
         content: "";
-        z-index: -1;
+        z-index: 1;
     }
     .snow:after { 
         margin-left: -200px;

@@ -2,7 +2,6 @@
   import Content from "$lib/organisms/ContentSprint.svelte";
   import Tasks from "$lib/organisms/Tasks.svelte";
   import Schedule from "$lib/organisms/Schedule.svelte";
-  import Snowfall from "$lib/atoms/snowfall.svelte";
   import { onNavigate } from "$app/navigation";
 
   onNavigate((navigation) => {
@@ -20,7 +19,6 @@
   const { title, sprintNumber, startdate, content, weekPlans, topics, tasks } = data;
 </script>
 
-<Snowfall />
 <div>
   <Content {title} {sprintNumber} {content} {startdate} {topics} />
   <Tasks {tasks} />
