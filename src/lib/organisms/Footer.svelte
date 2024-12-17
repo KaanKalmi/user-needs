@@ -1,8 +1,11 @@
 <script>
   import Logo from "$lib/atoms/HvaPayoff.svelte";
+  import Chubchoo from "$lib/img/Chubchoo.png";
 </script>
 
-<div class="fixed-bar"></div>
+<div class="fixed-bar">
+  <img src={Chubchoo} alt="Chubchoo" width="100" height="100" />
+</div>
 <footer>
   <nav>
     <h2> Archief </h2>
@@ -36,6 +39,12 @@
     background: var(--lavender);
     position: sticky;
     bottom: 0;
+
+    img{
+      position: absolute;
+      bottom: 1px;
+      right: -5px;
+    }
   }
 
   .fixed-bar::before, .fixed-bar::after {

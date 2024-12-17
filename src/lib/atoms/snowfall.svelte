@@ -4,7 +4,7 @@
     .snow, .snow:before, .snow:after {
         pointer-events: none;
         position: absolute;
-        top: -1000px;
+        top: -1500px;
         left: 0;
         bottom: 0;
         right: 0;
@@ -28,7 +28,7 @@
             radial-gradient(3px 3px at 83px 135px, rgb(0, 0, 0, 0.7) 50%, rgb(0, 0, 0, 0)),
             radial-gradient(5px 5px at 431px 526px, rgb(0, 0, 0, 0.7) 50%, rgb(0, 0, 0, 0)),
             radial-gradient(4px 4px at 114px 155px, rgb(0, 0, 0) 50%, rgb(0, 0, 0, 0));       
-        background-size: 600px 600px;
+        background-size: 300px 500px;
         animation: snow 6s linear infinite;
         content: "";
         z-index: 1;
@@ -47,5 +47,5 @@
         opacity: 0.65;
         filter: blur(1.5px);
     }
- @keyframes snow { to { transform: translateY(1000px); } }
+ @keyframes snow { to { transform: translateY(1500px); } }
 </style>
