@@ -88,7 +88,7 @@
           border: 1px solid var(--blueberry);
           border-radius: var(--rounded);
           text-decoration: none;
-          background: var(--white);
+          background: var(--grey);
         }
 
         a:focus-visible, a:hover {
@@ -113,7 +113,7 @@
           border: 1px solid var(--blueberry);
           background-color: var(--grey);
           border-radius: var(--rounded);
-          color: var(--attent);
+          color: var(--blueberry);
           right: 2px;
           top: 2px;
         }
@@ -122,7 +122,7 @@
   }
 
   @media (min-width: 720px) {
-    footer { flex-wrap: nowrap;
+    footer { flex-wrap: nowrap; color: var(--white);
 
       p {
         margin: 0 0 1em 0;

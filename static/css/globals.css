@@ -1,10 +1,10 @@
 :root {
-  --white: #faf8f8;
+  --white: #f2f3f8;
   --grey: #dcdfe5;
   --blueberry: #01110a;
-  --turquoise: #00be9c;
-  --lavender: #cd1624;
-  --call-to-action: #fffc86;
+  --turquoise: #2a850e;
+  --lavender: #751717;
+  --call-to-action: #feeedd;
   --rounded: .75rem;
   --pilled: 2rem;
   --shadow: .3rem;
