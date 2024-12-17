@@ -2,6 +2,7 @@
   import Heading from "$lib/organisms/Heading.svelte";
   import Content from "$lib/organisms/ContentSemester.svelte";
   import SprintLink from "$lib/molecules/SprintLink.svelte";
+  import Snowfall from "$lib/atoms/snowfall.svelte";
   import { onNavigate } from "$app/navigation";
 
   onNavigate((navigation) => {
@@ -19,6 +20,7 @@
   const semester = data;
 </script>
 
+<Snowfall />
 <div>
   <Heading title="Semester" subtitle={semester.title}/>
 </div>

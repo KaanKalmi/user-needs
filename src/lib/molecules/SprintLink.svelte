@@ -35,8 +35,7 @@
 {/if}
 
 <style>
-  a:focus,
-  a:hover {
+  a:focus, a:hover {
     background-position: left bottom;
   }
 
