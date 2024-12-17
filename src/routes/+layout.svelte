@@ -58,7 +58,7 @@
     :global(main) {
       background-color: var(--grey);
       max-width: var(--max-width);
-      padding: 0 2rem 0 3rem;
+      padding: 0 2rem;
       border-radius: var(--rounded);
     }
   }
