@@ -11,6 +11,12 @@
   --pilled: 2rem;
   --shadow: .3rem;
   --breakpoint-medium: 30em;
+
+  --darkbrown: #473109;
+  --mediumbrown: #8a5d2d;
+  --lightbrown: #bf935a;
+  --lightestbrown: #f1d9b5;
+  
 }
 
 @font-face {
