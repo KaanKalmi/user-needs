@@ -40,10 +40,10 @@
     width: 3em;
     margin-left: 1em;
     aspect-ratio: 3;
-    border: max(1px, 0.05em) solid #fff;
+    border: max(1px, 0.05em) solid #af941d;
     border-radius: 2em;
     box-sizing: content-box;
-    background: linear-gradient(90deg, var(--lavender) 6em, #1230 0) -5.5em 0 / 9em 100%, radial-gradient(circle, #fff 0.075em, #fff0 0.08em) 50% 0 / 0.4em 100%, var(--lavender);
+    background: linear-gradient(90deg, var(--lavender) 6em, #1230 0) -5.5em 0 / 9em 100%, radial-gradient(circle, #64f55f 0.075em, #fff0 0.08em) 50% 0 / 0.4em 100%, var(--lavender);
     transition: background-position calc(var(--speed) * 4) linear;
     --waka-speed: 0.2s;
     --speed: 0.5s;
@@ -56,7 +56,7 @@
     position: absolute;
     width: 0.8em;
     height: 0.4em;
-    background: yellow;
+    background: rgb(47, 133, 59);
     border-radius: 50% / 100% 100% 0 0;
     top: 50%;
     left: 0.5em;
