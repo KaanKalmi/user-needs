@@ -35,19 +35,13 @@
 {/if}
 
 <style>
+  :root {
+    --angle: 2.4deg;
+  }
+
   a:focus,
   a:hover {
     background-position: left bottom;
-  }
-
-  @keyframes animate-in {
-	0% { opacity: 0; transform: translateY(100%); }
-	100% { opacity: 1; transform: translateY(0); }
-}
-
-  @keyframes animate-out {
-    0% { opacity: 1; transform: translateY(0); }
-    100% { opacity: 0; transform: translateY(-100%); }
   }
 
   li {
@@ -64,10 +58,32 @@
     height: 6rem; 
     overflow: hidden;
 
-    animation: animate-in linear forwards,
-				animate-out linear forwards;
+    animation: scroll 1.2s linear, break;
     animation-timeline: view();
-    animation-range: entry, exit;
+    animation-range: entry 0 cover 40%;
+  }
+
+  @keyframes scroll {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  @keyframes break {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 
   li a {
