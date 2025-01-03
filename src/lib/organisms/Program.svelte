@@ -4,11 +4,11 @@
 </script>
 
 <section>
-  <div class="pin"></div>
-  <div>
-    <Heading {title} />
-    {@html content.html}
-  </div>
+    <div class="pin"></div>
+    <div>
+      <Heading {title} />
+      {@html content.html}
+    </div>
 </section>
 
 <style>
@@ -56,7 +56,7 @@
 
       animation-duration: var(--duration), 1.5s;
       animation-delay: var(--delay),
-      calc(var(--delay) + var(--duration) * var(--count));
+        calc(var(--delay) + var(--duration) * var(--count));
       animation-timing-function: ease-in-out;
       animation-iteration-count: var(--count), 1;
       animation-direction: var(--direction), normal;
@@ -66,18 +66,18 @@
   }
 
   @keyframes swing {
-	0% {
-		transform: rotate3d(0, 0, 1, calc(-1 * var(--angle)));
-	}
-	100% {
-		transform: rotate3d(0, 0, 1, var(--angle));
-	}
-}
-@keyframes swingEnd {
-	to {
-		transform: rotate3d(0, 0, 1, 0deg);
-	}
-}
+    0% {
+      transform: rotate3d(0, 0, 1, calc(-1 * var(--angle)));
+    }
+    100% {
+      transform: rotate3d(0, 0, 1, var(--angle));
+    }
+  }
+  @keyframes swingEnd {
+    to {
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+  }
 
   :global(section h2::selection, section p::selection) {
     background-color: var(--lavender);

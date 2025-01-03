@@ -4,5 +4,6 @@
   let { data } = $props();
   const { title, subtitle, content, semesters } = data;
 </script>
+
 <Program {title} {content} />
 <Semesters {semesters} {subtitle} />
